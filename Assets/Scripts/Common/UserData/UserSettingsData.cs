@@ -39,6 +39,8 @@ public class UserSettingsData : IUserData
         try
         {
             PlayerPrefs.SetInt("Sound", Sound ? 1 : 0);
+            PlayerPrefs.Save();
+
             result = true;
 
             Logger.Log($"Sound:{Sound}");

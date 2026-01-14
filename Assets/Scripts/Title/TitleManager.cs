@@ -33,6 +33,7 @@ public class TitleManager : MonoBehaviour
             UserDataManager.Instance.SetDefaultUserData();
             UserDataManager.Instance.SaveUserData();
         }
+
         StartCoroutine(LoadGameCo());
     }
 
